@@ -49,27 +49,27 @@ dna_file.close()
 criminal = []
 
 for gender in genders:
-    if searched_dna.find(genders[gender]) > 0: #mit find hinter einem string object, wird in diesem str nach dem str in der Klammer gesucht und wenn dieser gefunden wurde gibt Python eine positive Zahl wieder.
+    if searched_dna.find(genders[gender]) > -1: #mit find hinter einem string object, wird in diesem str nach dem str in der Klammer gesucht und wenn dieser gefunden wurde gibt Python eine positive Zahl wieder.
         print "\n\nThe criminal has the folowing gender:\n>>", gender
         criminal.append(gender)
 
 for race in races:
-    if searched_dna.find(races[race]) > 0:
+    if searched_dna.find(races[race]) > -1:
         print "\nThe criminal has the following race:\n>>", race
         criminal.append(race)
 
 for hair_color in hair_colors:
-    if searched_dna.find(hair_colors[hair_color]) > 0:
+    if searched_dna.find(hair_colors[hair_color]) > -1:
         print "\nThe criminal has the following hair color:\n>>", hair_color
         criminal.append(hair_color)
 
 for eye_color in eye_colors:
-    if searched_dna.find(eye_colors[eye_color]) > 0:
+    if searched_dna.find(eye_colors[eye_color]) > -1:
         print "\nThe criminal has the following eye color:\n>>", eye_color
         criminal.append(eye_color)
 
 for facial_shape in facial_shapes:
-    if searched_dna.find(facial_shapes[facial_shape]) > 0:
+    if searched_dna.find(facial_shapes[facial_shape]) > -1:
         print "\nThe criminal has the following facial shape:\n>>", facial_shape
         criminal.append(facial_shape)
 

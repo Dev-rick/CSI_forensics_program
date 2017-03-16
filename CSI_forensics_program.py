@@ -2,30 +2,30 @@
 
 print "Welcome to the CSI forensics program!"
 
-hair_color = {
+hair_colors = {
     "Black": "CCAGCAATCGC",
     "Brown": "GCCAGTGCCG",
     "Blonde": "TTAGCTATCGC"
 }
 
-facial_shape = {
+facial_shapes = {
     "Square": "GCCACGG",
     "Round": "ACCACAA",
     "Oval": "AGGCCTCA"
 }
 
-eye_color = {
+eye_colors = {
     "Blue": "TTGTGGTGGC",
     "Green": "GGGAGGTGGC",
     "Brown": "AAGTAGTGAC"
 }
 
-gender = {
+genders = {
     "Female": "TGAAGGACCTTC",
     "Male": "TGCAGGAACTTC"
 }
 
-race = {
+races = {
     "White": "AAAACCTCA",
     "Black": "CGACTACAG",
     "Asian": "CGCGGGCCG"
@@ -48,30 +48,30 @@ dna_file.close()
 
 criminal = []
 
-for i in gender:
-    if searched_dna.find(gender[i]) > 0: #mit find hinter einem string object, wird in diesem str nach dem str in der Klammer gesucht und wenn dieser gefunden wurde gibt Python eine positive Zahl wieder.
-        print "\n\nThe criminal has the folowing gender:\n>>", i
-        criminal.append(i)
+for gender in genders:
+    if searched_dna.find(genders[gender]) > 0: #mit find hinter einem string object, wird in diesem str nach dem str in der Klammer gesucht und wenn dieser gefunden wurde gibt Python eine positive Zahl wieder.
+        print "\n\nThe criminal has the folowing gender:\n>>", gender
+        criminal.append(gender)
 
-for i in race:
-    if searched_dna.find(race[i]) > 0:
-        print "\nThe criminal has the following race:\n>>", i
-        criminal.append(i)
+for race in races:
+    if searched_dna.find(races[race]) > 0:
+        print "\nThe criminal has the following race:\n>>", race
+        criminal.append(race)
 
-for i in hair_color:
-    if searched_dna.find(hair_color[i]) > 0:
-        print "\nThe criminal has the following hair color:\n>>", i
-        criminal.append(i)
+for hair_color in hair_colors:
+    if searched_dna.find(hair_colors[hair_color]) > 0:
+        print "\nThe criminal has the following hair color:\n>>", hair_color
+        criminal.append(hair_color)
 
-for i in eye_color:
-    if searched_dna.find(eye_color[i]) > 0:
-        print "\nThe criminal has the following eye color:\n>>", i
-        criminal.append(i)
+for eye_color in eye_colors:
+    if searched_dna.find(eye_colors[eye_color]) > 0:
+        print "\nThe criminal has the following eye color:\n>>", eye_color
+        criminal.append(eye_color)
 
-for i in facial_shape:
-    if searched_dna.find(facial_shape[i]) > 0:
-        print "\nThe criminal has the following facial shape:\n>>", i
-        criminal.append(i)
+for facial_shape in facial_shapes:
+    if searched_dna.find(facial_shapes[facial_shape]) > 0:
+        print "\nThe criminal has the following facial shape:\n>>", facial_shape
+        criminal.append(facial_shape)
 
 
 

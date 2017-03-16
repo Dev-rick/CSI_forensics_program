@@ -75,6 +75,6 @@ for facial_shape in facial_shapes:
 
 
 
-for i in suspects: #i ist hier ein str, passt sich immer dem Inhalt (hier ein dict, also strings) an.
-    if suspects[i] == criminal: #Mit suspects[i] greife ich auf die verschiedenen Listen im dict zu!
-        print "\n\nYour criminal who ate the ice cream is:\n>>", i
+for suspect in suspects: #i ist hier ein str, passt sich immer dem Inhalt (hier ein dict, also strings) an.
+    if suspects[suspect] == criminal: #Mit suspects[i] greife ich auf die verschiedenen Listen im dict zu!
+        print "\n\nYour criminal who ate the ice cream is:\n>>", suspect
